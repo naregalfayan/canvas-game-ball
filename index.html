@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no "
+    />
+    <title>Blowing Bubbles</title>
+    <link rel="icon" href="./imgs/file.png" />
+    <link
+      rel="stylesheet"
+      href="./style.css
+    "
+    />
+  </head>
+  <body>
+    <div id="scoreContainer">
+      <span id="scoreContainerSpan">Score: <span id="scoreEl">0</span></span>
+    </div>
+
+    <div class="svg_div">
+      <svg
+        id="volumeUpEl"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        style="color: white; width: 20px; height: 20px; cursor: pointer"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M19.114 5.636a9 9 0 0 1 0 12.728M16.463 8.288a5.25 5.25 0 0 1 0 7.424M6.75 8.25l4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z"
+        />
+      </svg>
+      <svg
+        id="volumeOffEl"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        style="
+          color: white;
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+          display: none;
+        "
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M17.25 9.75 19.5 12m0 0 2.25 2.25M19.5 12l2.25-2.25M19.5 12l-2.25 2.25m-10.5-6 4.72-4.72a.75.75 0 0 1 1.28.53v15.88a.75.75 0 0 1-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.009 9.009 0 0 1 2.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75Z"
+        />
+      </svg>
+    </div>
+
+    <div id="modalEl">
+      <label id="labelId">Game Over</label>
+      <h1 id="modalScoreEl">0</h1>
+      <p id="pointsScore">Points</p>
+      <button id="buttonEl">Restart Game</button>
+    </div>
+    <div id="startModalEl">
+      <h1>Welcome To Our Game Of Blowing Bubbles</h1>
+
+      <button id="startButtonEl">Start</button>
+    </div>
+    <canvas></canvas>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"
+      integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6EA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./src/classes.js"></script>
+    <script src="./src/index.js"></script>
+    <script src="./src/audio.js"></script>
+  </body>
+</html>
